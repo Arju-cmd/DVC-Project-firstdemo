@@ -20,7 +20,9 @@ logging.basicConfig(
 def main(config_path, params_path):
     ## read config files
     config = read_yaml(config_path)
+    print(config)
     params = read_yaml(params_path)
+    print(params)
     pass
 
 
@@ -29,6 +31,8 @@ if __name__ == '__main__':
     args.add_argument("--config", "-c", default="configs/config.yaml")
     args.add_argument("--params", "-p", default="params.yaml")
     parsed_args = args.parse_args()
+    print(parsed_args)
+
 
     try:
         logging.info("\n********************")
