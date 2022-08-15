@@ -7,8 +7,8 @@ stages:
       md5: 9d74b3d4530649b99c5bcef7f01d0f50
       size: 410
     - path: params.yaml
-      md5: 981822450c190aca6c5bbdfbb94f0533
-      size: 179
+      md5: 2c68f36c4b90c70c6ff3f0eb5e7d8b15
+      size: 216
     - path: src/stage_01_load_save.py
       md5: 0471bc9f147a7a75907269dd0bbc70f3
       size: 1694
@@ -29,8 +29,8 @@ stages:
       md5: 9d74b3d4530649b99c5bcef7f01d0f50
       size: 410
     - path: params.yaml
-      md5: 981822450c190aca6c5bbdfbb94f0533
-      size: 179
+      md5: 2c68f36c4b90c70c6ff3f0eb5e7d8b15
+      size: 216
     - path: src/stage_02_split_data.py
       md5: 5ebf6f03679c1d7d2b353b8324d2312f
       size: 2498
@@ -58,8 +58,8 @@ stages:
       md5: 9d74b3d4530649b99c5bcef7f01d0f50
       size: 410
     - path: params.yaml
-      md5: 981822450c190aca6c5bbdfbb94f0533
-      size: 179
+      md5: 2c68f36c4b90c70c6ff3f0eb5e7d8b15
+      size: 216
     - path: src/stage_03_train.py
       md5: 7fd3af71f1e0a1e290738499be7e8473
       size: 2322
@@ -70,16 +70,16 @@ stages:
       params.yaml:
         base.random_state: 42
         model_params.ElasticNet.alpha: 0.5
-        model_params.ElasticNet.l1_ratio: 0.5
+        model_params.ElasticNet.l1_ratio: 0.7
     outs:
     - path: artifacts/model_dir/model.pkl
-      md5: 5e0aa54d837c5c5c7354ad7592c9da0e
+      md5: cd481532e517bda0cec7d88395dce7f7
       size: 1316
   evaluate:
     cmd: python src/stage_04_evaluate.py
     deps:
     - path: artifacts/model_dir/model.pkl
-      md5: 5e0aa54d837c5c5c7354ad7592c9da0e
+      md5: cd481532e517bda0cec7d88395dce7f7
       size: 1316
     - path: artifacts/split_data_dir/test.csv
       md5: 3a3eef9f920deae72cb9bcd7b91231f1
@@ -88,8 +88,8 @@ stages:
       md5: 9d74b3d4530649b99c5bcef7f01d0f50
       size: 410
     - path: params.yaml
-      md5: 981822450c190aca6c5bbdfbb94f0533
-      size: 179
+      md5: 2c68f36c4b90c70c6ff3f0eb5e7d8b15
+      size: 216
     - path: src/stage_04_evaluate.py
       md5: af5bb5b80b4cf27fc69e04841f55406c
       size: 2794
@@ -98,5 +98,5 @@ stages:
       size: 675
     outs:
     - path: scores.json
-      md5: 0c5d4198364b857d9f249c16463c99d8
-      size: 100
+      md5: 0daed926cba0c550bda4f760c201f496
+      size: 99
