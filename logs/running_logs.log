@@ -1,0 +1,70 @@
+[2022-08-15 12:44:06,561: INFO: stage_01_load_save]: 
+********************
+[2022-08-15 12:44:06,562: INFO: stage_01_load_save]: >>>>> stage GET DATA started <<<<<
+[2022-08-15 12:44:06,564: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 12:44:08,019: INFO: common]: created directory at: artifacts\raw_local_dir
+[2022-08-15 12:44:08,050: INFO: stage_01_load_save]: >>>>> stage GET DATA completed!<<<<<
+
+[2022-08-15 12:59:21,320: INFO: stage_01_load_save]: 
+********************
+[2022-08-15 12:59:21,320: INFO: stage_01_load_save]: >>>>> stage GET DATA started <<<<<
+[2022-08-15 12:59:21,322: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 12:59:22,837: INFO: common]: created directory at: artifacts\raw_local_dir
+[2022-08-15 12:59:22,848: INFO: stage_01_load_save]: data is saved at : artifacts\raw_local_dir\data.csv
+[2022-08-15 12:59:22,848: INFO: stage_01_load_save]: >>>>> stage GET DATA completed!<<<<<
+
+[2022-08-15 13:10:21,088: INFO: stage_01_load_save]: 
+********************
+[2022-08-15 13:10:21,088: INFO: stage_01_load_save]: >>>>> stage GET DATA started <<<<<
+[2022-08-15 13:10:21,090: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 13:10:28,411: INFO: common]: created directory at: artifacts\raw_local_dir
+[2022-08-15 13:10:28,423: INFO: stage_01_load_save]: data is saved at : artifacts\raw_local_dir\data.csv
+[2022-08-15 13:10:28,424: INFO: stage_01_load_save]: >>>>> stage GET DATA completed!<<<<<
+
+[2022-08-15 14:15:22,446: INFO: stage_02_split_data]: 
+********************
+[2022-08-15 14:15:22,446: INFO: stage_02_split_data]: >>>>> stage SPLIT DATA STAGE started <<<<<
+[2022-08-15 14:15:22,446: ERROR: stage_02_split_data]: main() missing 1 required positional argument: 'params_path'
+Traceback (most recent call last):
+  File "src/stage_02_split_data.py", line 62, in <module>
+    main(config_path=parsed_args.config)
+TypeError: main() missing 1 required positional argument: 'params_path'
+[2022-08-15 14:48:48,149: INFO: stage_02_split_data]: 
+********************
+[2022-08-15 14:48:48,150: INFO: stage_02_split_data]: >>>>> stage SPLIT DATA STAGE started <<<<<
+[2022-08-15 14:48:48,151: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 14:48:48,152: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 14:48:51,298: INFO: common]: created directory at: artifacts\split_data_dir
+[2022-08-15 14:48:51,309: INFO: stage_02_split_data]: >>>>> stage SPLIT DATA STAGE completed!<<<<<
+
+[2022-08-15 16:08:14,161: INFO: stage_02_split_data]: 
+********************
+[2022-08-15 16:08:14,161: INFO: stage_02_split_data]: >>>>> stage SPLIT DATA STAGE started <<<<<
+[2022-08-15 16:08:14,164: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 16:08:14,164: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 16:08:15,732: INFO: stage_02_split_data]: splitting of data in training and test files at test_size : 0.3
+[2022-08-15 16:08:15,733: INFO: common]: created directory at: artifacts\split_data_dir
+[2022-08-15 16:08:15,747: INFO: stage_02_split_data]: data is saved at : artifacts\split_data_dir\train.csv
+[2022-08-15 16:08:15,754: INFO: stage_02_split_data]: data is saved at : artifacts\split_data_dir\test.csv
+[2022-08-15 16:08:15,754: INFO: stage_02_split_data]: >>>>> stage SPLIT DATA STAGE completed!<<<<<
+
+[2022-08-15 19:06:57,843: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 19:06:57,844: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 19:14:53,512: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 19:14:53,513: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 19:22:39,016: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 19:22:39,017: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 19:24:12,215: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 19:24:12,216: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 19:24:12,230: INFO: common]: created directory at: artifacts\model_dir
+[2022-08-15 19:30:24,659: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 19:30:24,660: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 19:30:24,665: INFO: common]: created directory at: artifacts\model_dir
+[2022-08-15 19:58:54,174: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 19:58:54,175: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 20:00:41,927: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 20:00:41,928: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 20:00:41,935: INFO: common]: json file saved at: scores.json
+[2022-08-15 21:21:08,696: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-08-15 21:21:08,697: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-08-15 21:21:08,723: INFO: common]: json file saved at: scores.json
